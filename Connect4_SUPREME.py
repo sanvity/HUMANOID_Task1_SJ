@@ -48,7 +48,7 @@ def winning_move(board,piece):
                 return True
             
     for c in range(COLUMN-2):   #easter diamond 
-        for r in range(ROW):
+        for r in range(ROW-2):
             if board[r][c]==piece and board[r+1][c+1] == piece and board[r-1][c+1] == piece and board[r][c+2] == piece:
                 return True
 
